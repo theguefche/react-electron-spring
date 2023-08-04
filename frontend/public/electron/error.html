@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+        .container {
+            height: 100vh;
+            font-family: "Montserrat", "sans-serif";
+            font-weight: bolder;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>An error as occured.</h1>
+        <div id="error-message"></div>
+    </div>
+    <script>
+        // Retrieve the error message from the URL query parameter
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const errorMessage = urlParams.get('message');
+
+        // Display the error message in the placeholder element
+        const errorMessageElement = document.getElementById('error-message');
+        errorMessageElement.innerText = errorMessage;
+    </script>
+</body>
+
+</html>
