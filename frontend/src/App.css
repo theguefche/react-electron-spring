@@ -2,9 +2,14 @@
   text-align: center;
 }
 
+.logo-container {
+  display: flex;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  overflow: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import reactlogo from './react-logo.svg';
+import electronlogo from './electron-logo.svg'
+import springlogo from './spring-logo.svg'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className='logo-container'>
+          <img src={reactlogo} className="App-logo" alt="react-logo" />
+          <img src={electronlogo} className="App-logo" alt="electron-logo" />
+          <img src={springlogo} className="App-logo" alt="spring-logo" />
+        </div>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Congratulations Your App Runs Great
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
