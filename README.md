@@ -149,7 +149,7 @@ function createWindow() {
 
     requestTOFront.end();
 
-  }, 2500);
+  }, 7500);
 }
 
 function showErrorWindow(errorMessage) {
@@ -333,7 +333,7 @@ function createWindow() {
 
     requestTOBack.end();
 
-  }, 2500);
+  }, 7500);
 }
 
 function showErrorWindow(errorMessage) {
